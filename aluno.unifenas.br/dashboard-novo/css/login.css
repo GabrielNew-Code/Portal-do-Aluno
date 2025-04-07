@@ -1,0 +1,22 @@
+.background{
+    background-color: #00436e !important;
+}
+.text-primary{
+    color: #00436e !important;
+}
+.btn-login{
+    background-color: #00436e;
+    color: #fff;
+}
+.btn-resp{
+    background-color: #0087df;
+    color: #fff;
+}
+.btn-login:hover{
+    background-color: #005b94;
+    color: #fff;
+}
+.btn-resp:hover{
+    background-color: #006bb4;
+    color: #fff;
+}
