@@ -199,23 +199,24 @@ hr {
     z-index: 999; /* Para garantir que o overlay fique acima de outros conteúdos */
 }
 
-/* Estilos para a mensagem */
+/* Estilos para o container da mensagem de sucesso */
 #sucesso-message {
-
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     width: 50%;
     height: 50%;
-
     display: none;
     background-color: rgb(0, 67, 110);
     color: white;
     padding: 20px;
     border-radius: 12px;
     position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%; /* Posiciona o centro da mensagem a 50% da altura da tela */
+    left: 50%; /* Posiciona o centro da mensagem a 50% da largura da tela */
+    transform: translate(-50%, -50%); /* Move para que o centro real do elemento coincida com o centro da tela */
     box-shadow: 0px 4px 10px rgba(0, 134, 217, 0.8);
-    z-index: 1000; /*Garante que a mensagem fique sobre o overlay*/
+    z-index: 1000; /* Garante que a mensagem fique sobre o overlay */
     text-align: center;
 }
 
