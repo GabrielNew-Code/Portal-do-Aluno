@@ -8,7 +8,7 @@ body, html {
 
 /* Estilos básicos */
 body {
-    background-color: rgb(255, 67, 110) !important;
+    background-color: rgb(0, 67, 110) !important;
 }
 
 /* Logo */
@@ -213,7 +213,7 @@ hr {
     color: white;
     padding: 20px;
     border-radius: 12px;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -279,6 +279,9 @@ hr {
 @media (max-width: 768px) {
     #sucesso-message {
         width: 80%;
+
+        height: auto;  /* Permite que o tamanho se ajuste automaticamente NOVO NOVO */
+
         padding: 30px;
     }
 
@@ -301,37 +304,6 @@ hr {
 
     #sucesso-icon {
         font-size: 100px; /* Reduz o tamanho do ícone no mobile */
-    }
-}
-
-
-
-/* Responsividade para telas muito pequenas (como smartphones) */
-@media (max-width: 480px) {
-    #sucesso-message {
-        width: 80%; /* Ainda maior para telas muito pequenas */
-        padding: 20px;
-    }
-
-    #sucesso-message p {
-        font-size: 20px;  /* Diminui ainda mais em telas pequenas */
-    }
-
-    #sucesso-text {
-        font-size: 20px;  /* Diminui o tamanho no mobile */
-    }
-    
-    #carregando-text {
-        font-size: 20px;  /* Diminui o tamanho no mobile */
-    }
-
-    .spinner {
-        width: 80px;
-        height: 80px;
-    }
-
-    #sucesso-icon {
-        font-size: 80px; /* Reduz ainda mais no mobile */
     }
 }
 
