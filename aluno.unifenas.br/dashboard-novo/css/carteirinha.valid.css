@@ -8,7 +8,7 @@ body, html {
 
 /* Estilos básicos */
 body {
-    background-color: rgb(0, 67, 110) !important;
+    background-color: rgb(255, 67, 110) !important;
 }
 
 /* Logo */
@@ -201,55 +201,72 @@ hr {
 
 /* Estilos para a mensagem */
 #sucesso-message {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    width: 300px;  /* Tamanho do container */
-    height: 300px;  /* Aumentei o tamanho para dar mais espaço */
+
+    /* width: 50%;
+    height: 50%; */
+
+    width: 300px;
+    height: 300px;
+
     display: none;
     background-color: rgb(0, 67, 110);
     color: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 12px;
     position: fixed;
-    top: 50%; /* Posiciona o centro da mensagem a 50% da altura da tela */
-    left: 50%; /* Posiciona o centro da mensagem a 50% da largura da tela */
-    transform: translate(-50%, -50%); /* Move para que o centro real do elemento coincida com o centro da tela */
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: 0px 4px 10px rgba(0, 134, 217, 0.8);
-    z-index: 1000; /* Garante que a mensagem fique sobre o overlay */
+    z-index: 1000; /*Garante que a mensagem fique sobre o overlay*/
     text-align: center;
-    flex-direction: column; /* Adicionado para empilhar os itens verticalmente */
 }
 
-/* Estilos para o ícone de sucesso */
-#sucesso-icon {
-    font-size: 100px;  /* Aumentei o tamanho do ícone para 100px */
-    margin-bottom: 20px; /* Mais espaço abaixo do ícone */
-    color: rgb(23, 166, 255); /* Define a cor do ícone */
+/* Estilo para o texto da mensagem */
+#sucesso-message p {
+    font-size: 30px;  /* Tamanho da fonte no desktop */
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
 }
 
 /* Estilo para o texto de "Autenticado com sucesso!" */
 #sucesso-text {
     color: rgb(23, 166, 255);  /* Cor do texto "Autenticado com sucesso!" */
-    font-size: 24px;  /* Aumentei o tamanho do texto */
-    font-weight: bold;
+    font-size: 30px;
 }
 
 /* Estilo para o texto de "Carregando..." */
 #carregando-text {
     color: white;  /* Cor do texto "Carregando..." */
-    font-size: 24px;  /* Aumentei o tamanho do texto */
+    font-size: 30px;
 }
+
+/* Container interno da mensagem */
+#sucesso-message-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para o ícone de sucesso */
+#sucesso-icon {
+    font-size: 100px;  /* Define o tamanho do ícone */
+    margin-bottom: 25px;  /* Espaço abaixo do ícone */
+    display: inline-block;  /* Garante que o ícone seja tratado como bloco de linha */
+    color: rgb(23, 166, 255); /* Define a cor do ícone */
+}
+
 
 /* Estilos para o spinner de carregamento */
 .spinner {
-    width: 100px;  /* Aumentei o tamanho do spinner para 100px */
+    width: 100px;
     height: 100px;
     border: 8px solid #f3f3f3;
     border-top: 8px solid rgb(23, 166, 255);
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    margin-bottom: 20px; /* Mais espaço abaixo do spinner */
+    margin-bottom: 15px;
 }
 
 /* Animação do spinner */
@@ -261,43 +278,60 @@ hr {
 /* Responsividade */
 @media (max-width: 768px) {
     #sucesso-message {
-        width: 80%;  /* Maior no mobile */
-        height: auto;  /* Permite que o tamanho se ajuste automaticamente */
-        padding: 15px;
+        width: 80%;
+        padding: 30px;
+    }
+
+    #sucesso-message p {
+        font-size: 28px;  /* Diminui o tamanho no mobile */
+    }
+
+    #sucesso-text {
+        font-size: 28px;  /* Diminui o tamanho no mobile */
+    }
+    
+    #carregando-text {
+        font-size: 28px;  /* Diminui o tamanho no mobile */
+    }
+
+    .spinner {
+        width: 100px;
+        height: 100px;
     }
 
     #sucesso-icon {
-        font-size: 90px;  /* Ajuste o tamanho do ícone para telas menores */
+        font-size: 100px; /* Reduz o tamanho do ícone no mobile */
+    }
+}
+
+
+
+/* Responsividade para telas muito pequenas (como smartphones) */
+@media (max-width: 480px) {
+    #sucesso-message {
+        width: 80%; /* Ainda maior para telas muito pequenas */
+        padding: 20px;
     }
 
-    #sucesso-text, #carregando-text {
-        font-size: 20px;  /* Ajusta o tamanho do texto */
+    #sucesso-message p {
+        font-size: 20px;  /* Diminui ainda mais em telas pequenas */
+    }
+
+    #sucesso-text {
+        font-size: 20px;  /* Diminui o tamanho no mobile */
+    }
+    
+    #carregando-text {
+        font-size: 20px;  /* Diminui o tamanho no mobile */
     }
 
     .spinner {
         width: 80px;
         height: 80px;
     }
-}
-
-/* Responsividade para telas muito pequenas (como smartphones) */
-@media (max-width: 480px) {
-    #sucesso-message {
-        width: 90%;  /* Maior para telas muito pequenas */
-        padding: 10px;
-    }
 
     #sucesso-icon {
-        font-size: 80px; /* Ajustei o tamanho do ícone para telas pequenas */
-    }
-
-    #sucesso-text, #carregando-text {
-        font-size: 18px;  /* Aumentei o tamanho do texto */
-    }
-
-    .spinner {
-        width: 70px;
-        height: 70px;
+        font-size: 80px; /* Reduz ainda mais no mobile */
     }
 }
 
