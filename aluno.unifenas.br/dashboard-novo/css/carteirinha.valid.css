@@ -8,7 +8,7 @@ body, html {
 
 /* Estilos básicos */
 body {
-    background-color: rgb(0, 67, 110) !important;
+    background-color: rgb(255, 67, 110) !important;
 }
 
 /* Logo */
@@ -205,7 +205,7 @@ hr {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     width: 300px;  /* Tamanho do container */
-    height: 250px;  /* Ajustado para dar mais espaço */
+    height: 300px;  /* Aumentei o tamanho para dar mais espaço */
     display: none;
     background-color: rgb(0, 67, 110);
     color: white;
@@ -222,7 +222,7 @@ hr {
 
 /* Estilos para o ícone de sucesso */
 #sucesso-icon {
-    font-size: 60px;  /* Aumentei o tamanho do ícone */
+    font-size: 100px;  /* Aumentei o tamanho do ícone para 100px */
     margin-bottom: 20px; /* Mais espaço abaixo do ícone */
     color: rgb(23, 166, 255); /* Define a cor do ícone */
 }
@@ -230,20 +230,20 @@ hr {
 /* Estilo para o texto de "Autenticado com sucesso!" */
 #sucesso-text {
     color: rgb(23, 166, 255);  /* Cor do texto "Autenticado com sucesso!" */
-    font-size: 22px;  /* Aumentei o tamanho do texto */
+    font-size: 24px;  /* Aumentei o tamanho do texto */
     font-weight: bold;
 }
 
 /* Estilo para o texto de "Carregando..." */
 #carregando-text {
     color: white;  /* Cor do texto "Carregando..." */
-    font-size: 22px;  /* Aumentei o tamanho do texto */
+    font-size: 24px;  /* Aumentei o tamanho do texto */
 }
 
 /* Estilos para o spinner de carregamento */
 .spinner {
-    width: 60px;  /* Aumentei o tamanho do spinner */
-    height: 60px;
+    width: 100px;  /* Aumentei o tamanho do spinner para 100px */
+    height: 100px;
     border: 8px solid #f3f3f3;
     border-top: 8px solid rgb(23, 166, 255);
     border-radius: 50%;
@@ -266,7 +266,7 @@ hr {
     }
 
     #sucesso-icon {
-        font-size: 50px;  /* Ajuste o tamanho do ícone para telas menores */
+        font-size: 90px;  /* Ajuste o tamanho do ícone para telas menores */
     }
 
     #sucesso-text, #carregando-text {
@@ -274,8 +274,8 @@ hr {
     }
 
     .spinner {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -287,7 +287,7 @@ hr {
     }
 
     #sucesso-icon {
-        font-size: 45px; /* Ajustei o tamanho do ícone para telas pequenas */
+        font-size: 80px; /* Ajustei o tamanho do ícone para telas pequenas */
     }
 
     #sucesso-text, #carregando-text {
@@ -295,7 +295,8 @@ hr {
     }
 
     .spinner {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
 }
+
