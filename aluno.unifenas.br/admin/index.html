@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="shortcut icon"
+      href="https://aluno.unifenas.br/dashboard-novo/favicon/favicon.ico"
+    />
+    <title>Administração de Alunos</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #071767;
+        padding: 20px;
+      }
+
+      .aluno-card {
+        display: flex;
+        flex-direction: row;
+        background-color: #435ee1;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 20px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+        transition: transform 0.2s;
+        position: relative; /* Para posicionar o status no canto superior direito */
+      }
+
+      .aluno-card:hover {
+        transform: scale(1.02);
+      }
+
+      .aluno-foto {
+        flex-shrink: 0;
+        width: 120px; /* Tamanho fixo da imagem */
+        height: 160px; /* Tamanho fixo da imagem */
+        object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+        border-radius: 8px;
+      }
+
+      .aluno-info {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+      }
+
+      .aluno-id {
+        color: #0f0f0f;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+
+      .aluno-nome {
+        font-weight: bold;
+        font-size: 20px;
+        color: #0f0f0f;
+      }
+
+      .aluno-curso {
+        font-size: 15px;
+        font-weight: bold;
+        color: #0f0f0f;
+        margin-top: 1px;
+        margin-bottom: 3px;
+      }
+
+      /* Estilo do status (Ativo ou Bloqueado) no canto superior direito */
+      .status {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 4px 12px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 20px;
+        color: #fff;
+      }
+
+      .ativo {
+        background-color: #47cc4c; /* Verde claro */
+      }
+
+      .bloqueado {
+        background-color: #eb3a2d; /* Vermelho claro */
+      }
+
+      /* Remover sublinhado dos links */
+      .aluno-card-link,
+      .aluno-nome {
+        text-decoration: none; /* Remove o sublinhado */
+        color: inherit; /* Mantém a cor do texto original */
+      }
+
+      @media (max-width: 600px) {
+        .aluno-card {
+          flex-direction: row; /* Mantém a estrutura em linha, não empilha */
+          align-items: center;
+          text-align: left;
+        }
+
+        .aluno-foto {
+          width: 100px; /* Largura da imagem */
+          height: 133px; /* Altura ajustada para 3x4 (proporção) */
+          object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+          border-radius: 8px; /* Arredondar as bordas da imagem */
+          margin-bottom: 6px;
+        }
+
+        .aluno-info {
+          margin-left: 10px; /* Ajusta o espaço ao lado da imagem */
+        }
+
+        .aluno-id {
+          font-size: 12px;
+        }
+
+        .aluno-curso {
+          font-size: 15px;
+        }
+
+        .aluno-nome {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200207251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200207251</div>
+        <div class="aluno-curso">Ciência da Computação</div>
+        <div class="aluno-nome">Luiz Felipe Rodrigues Pena</div>
+      </div>
+    </div>
+
+    <!-- Aluno 2 (Bloqueado) -->
+    <!-- <div class="aluno-card">
+      <div class="status bloqueado">Bloqueado</div>
+      <img
+        src="../Aluno/200207252/IMG_Aluno2.jpg"
+        alt="Aluno 2"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 1002</div>
+        <div class="aluno-nome">Carlos Henrique Silva</div>
+      </div>
+    </div> -->
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200402251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200402251</div>
+        <div class="aluno-curso">Educação Fisica</div>
+        <div class="aluno-nome">Weslley de Oliveira Lopes Martiniano</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200503251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200503251</div>
+        <div class="aluno-curso">Biomedicina</div>
+        <div class="aluno-nome">Carolaybe Vitória do Carmo da Silva</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200505251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200505251</div>
+        <div class="aluno-curso">Psicologia</div>
+        <div class="aluno-nome">Anderson Henrique Arantes Felipe</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200507251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200507251</div>
+        <div class="aluno-curso">Ciência Contábeis</div>
+        <div class="aluno-nome">Yasmim Carolini Rocha do Santos</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200509251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200509251</div>
+        <div class="aluno-curso">Direito</div>
+        <div class="aluno-nome">Isabelly Ferreira Quintão</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200510251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200510251</div>
+        <div class="aluno-curso">Biomedicina</div>
+        <div class="aluno-nome">Maria Fernanda Paes Silva</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200511251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200511251</div>
+        <div class="aluno-curso">Psicologia</div>
+        <div class="aluno-nome">Beatriz Silva Silveira</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200601251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200601251</div>
+        <div class="aluno-curso">Psicologia</div>
+        <div class="aluno-nome">Flávia Alexandra Vieira</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200602251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200602251</div>
+        <div class="aluno-curso">Nutrição</div>
+        <div class="aluno-nome">Ana Clara Viana Lemos de Lacerda</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200603251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200603251</div>
+        <div class="aluno-curso">Psicologia</div>
+        <div class="aluno-nome">Lavinia Leite Gonçalves</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200604251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200604251</div>
+        <div class="aluno-curso">Letícia Aparecida Anselmo de Oliveira</div>
+        <div class="aluno-nome">Odontologia</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200607251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200607251</div>
+        <div class="aluno-curso">Estética e Cosmética</div>
+        <div class="aluno-nome">Brenda Aparecida Pereira</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200608251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200608251</div>
+        <div class="aluno-curso">Administração</div>
+        <div class="aluno-nome">Júlia Reis</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200609251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200609251</div>
+        <div class="aluno-curso">Ciência Contábeis</div>
+        <div class="aluno-nome">Davi Megda Sebinelli</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200611251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200611251</div>
+        <div class="aluno-curso">Agronomia</div>
+        <div class="aluno-nome">Mallu de Ávila Teixeira Rezende</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200612251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200612251</div>
+        <div class="aluno-curso">Enfermagem</div>
+        <div class="aluno-nome">Viviane Vitória Pereira da Silva</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200620251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200620251</div>
+        <div class="aluno-curso">Educação Física</div>
+        <div class="aluno-nome">Matheus Cabral Elias</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200701251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200701251</div>
+        <div class="aluno-curso">Engenharia Civil</div>
+        <div class="aluno-nome">Marcos Thúlio Gonçalves</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200702251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200702251</div>
+        <div class="aluno-curso">Agronomia</div>
+        <div class="aluno-nome">Otavio Augusto Naves</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200703251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200703251</div>
+        <div class="aluno-curso">Biomedicina</div>
+        <div class="aluno-nome">Marina Messias</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200707251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200707251</div>
+        <div class="aluno-curso">Farmácia</div>
+        <div class="aluno-nome">Ana Júlia Raymon de Lima</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200715251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200715251</div>
+        <div class="aluno-curso">Ciências Contábeis</div>
+        <div class="aluno-nome">Gabriel Francisco Araujo Ribeiro</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200720251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200720251</div>
+        <div class="aluno-curso">Psicologia</div>
+        <div class="aluno-nome">Manuela Colucci Gomes dos Reis</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200729251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200729251</div>
+        <div class="aluno-curso">Farmácia</div>
+        <div class="aluno-nome">Natasha Messias</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <div class="aluno-card">
+      <div class="status ativo">Matriculado</div>
+      <!-- <div class="status bloqueado">Bloqueado</div> -->
+      <img
+        src="../Aluno/200802251/IMG_Aluno.jpg"
+        alt="Aluno"
+        class="aluno-foto"
+      />
+      <div class="aluno-info">
+        <div class="aluno-id">ID: 200802251</div>
+        <div class="aluno-curso">Educação Física</div>
+        <div class="aluno-nome">Kauã Roque Esteves</div>
+      </div>
+    </div>
+
+    <!-- Aluno -->
+    <a href="../aluno/100101251/login.html" class="aluno-card-link">
+      <div class="aluno-card">
+        <div class="status bloqueado">Bloqueado</div>
+        <img
+          src="../Aluno/100101251/IMG_Aluno.jpg"
+          alt="Aluno"
+          class="aluno-foto"
+        />
+        <div class="aluno-info">
+          <div class="aluno-id">ID: 000</div>
+          <div class="aluno-curso">Curso</div>
+          <div class="aluno-nome">Aluno</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Aluno -->
+    <a href="../aluno/2025/login.html" class="aluno-card-link">
+      <div class="aluno-card">
+        <div class="status bloqueado">Bloqueado</div>
+        <img src="../Aluno/2025/IMG_Aluno.jpg" alt="Aluno" class="aluno-foto" />
+        <div class="aluno-info">
+          <div class="aluno-id">ID: 2025</div>
+          <div class="aluno-curso">Unigames</div>
+          <div class="aluno-nome">MC Tuto</div>
+        </div>
+      </div>
+    </a>
+  </body>
+</html>
