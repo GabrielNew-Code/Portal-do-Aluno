@@ -2,16 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         
-        <title>Aluno | Unifenas - Login</title>
+        <title>Aluno | Unifenas - Home</title>
         
-        <!-- SEO Meta Tags-->
-        <meta name="description" content="Portal do aluno - Unifenas">
-        <meta name="keywords" content="">
-        <meta name="author" content="GBR">
-
-        <!-- Viewport-->
+        <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- App favicon -->
@@ -19,10 +14,11 @@
 
         <!-- Bootstrap Css -->
         <link href="../../dashboard-novo/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="../../dashboard-novo/css/login.css" rel="stylesheet" type="text/css">
+        <link href="../../dashboard-novo/css/index.css" rel="stylesheet" type="text/css">
         
         <!-- Icons Css -->
         <link href="../../dashboard-novo/css/icons.min.css" rel="stylesheet" type="text/css">
+        
 
         <!-- App Css-->
         <link href="../../dashboard-novo/css/app.min.css" rel="stylesheet" type="text/css">
@@ -34,6 +30,7 @@
         <link rel="stylesheet" href="../../dashboard-novo/css/page-loading.css">
         <script src="../../dashboard-novo/js/page-loading.js"></script>
 
+      
         <!-- Google tag (gtag.js) -->
         <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLFRB0WNJ"></script> -->
         <script async src="../../../www.googletagmanager.com/gtag/js.html"></script>
@@ -45,102 +42,382 @@
             gtag('config', 'G-QWLFRB0WNJ');
         </script>
 
-        <style >[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
-
+                <style >[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
     
 <!-- <script type="text/javascript" class="flasher-js">(function() {    var rootScript = 'https://cdn.jsdelivr.net/npm/@flasher/flasher@1.3.1/dist/flasher.min.js';    var FLASHER_FLASH_BAG_PLACE_HOLDER = {};    var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);    function mergeOptions(first, second) {        return {            context: merge(first.context || {}, second.context || {}),            envelopes: merge(first.envelopes || [], second.envelopes || []),            options: merge(first.options || {}, second.options || {}),            scripts: merge(first.scripts || [], second.scripts || []),            styles: merge(first.styles || [], second.styles || []),        };    }    function merge(first, second) {        if (Array.isArray(first) && Array.isArray(second)) {            return first.concat(second).filter(function(item, index, array) {                return array.indexOf(item) === index;            });        }        return Object.assign({}, first, second);    }    function renderOptions(options) {        if(!window.hasOwnProperty('flasher')) {            console.error('Flasher is not loaded');            return;        }        requestAnimationFrame(function () {            window.flasher.render(options);        });    }    function render(options) {        if ('loading' !== document.readyState) {            renderOptions(options);            return;        }        document.addEventListener('DOMContentLoaded', function() {            renderOptions(options);        });    }    if (1 === document.querySelectorAll('script.flasher-js').length) {        document.addEventListener('flasher:render', function (event) {            render(event.detail);        });    }    if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {        render(options);    } else {        var tag = document.createElement('script');        tag.setAttribute('src', rootScript);        tag.setAttribute('type', 'text/javascript');        tag.onload = function () {            render(options);        };        document.head.appendChild(tag);    }})();</script> -->
 <script type="text/javascript" class="flasher-js">(function() {    var rootScript = '../../../cdn.jsdelivr.net/npm/@flasher/flasher@1.3.1/dist/flasher.min.js';    var FLASHER_FLASH_BAG_PLACE_HOLDER = {};    var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);    function mergeOptions(first, second) {        return {            context: merge(first.context || {}, second.context || {}),            envelopes: merge(first.envelopes || [], second.envelopes || []),            options: merge(first.options || {}, second.options || {}),            scripts: merge(first.scripts || [], second.scripts || []),            styles: merge(first.styles || [], second.styles || []),        };    }    function merge(first, second) {        if (Array.isArray(first) && Array.isArray(second)) {            return first.concat(second).filter(function(item, index, array) {                return array.indexOf(item) === index;            });        }        return Object.assign({}, first, second);    }    function renderOptions(options) {        if(!window.hasOwnProperty('flasher')) {            console.error('Flasher is not loaded');            return;        }        requestAnimationFrame(function () {            window.flasher.render(options);        });    }    function render(options) {        if ('loading' !== document.readyState) {            renderOptions(options);            return;        }        document.addEventListener('DOMContentLoaded', function() {            renderOptions(options);        });    }    if (1 === document.querySelectorAll('script.flasher-js').length) {        document.addEventListener('flasher:render', function (event) {            render(event.detail);        });    }    if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {        render(options);    } else {        var tag = document.createElement('script');        tag.setAttribute('src', rootScript);        tag.setAttribute('type', 'text/javascript');        tag.onload = function () {            render(options);        };        document.head.appendChild(tag);    }})();</script>
+
+
+    <script>
+        const linkPadrao = "../../painel/Sem_Conexao_Servidor.html"; // Altere aqui para mudar todos os links
+    </script>
+
 </head>
 
-    <!-- Body -->
-    <body>
+   <!-- Page loading spinner -->
+   <div class="page-loading active">
+      <div class="page-loading-inner">
+         <div class="page-spinner"></div><span>Carregando...</span>
+      </div>
+   </div>
 
-        <!-- Page loading spinner -->
-        <div class="page-loading active">
-            <div class="page-loading-inner">
-                <div class="page-spinner"></div><span>Carregando...</span>
-            </div>
-        </div>
+   <!-- Body -->
+    <body data-sidebar="dark">
 
-        <div>
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    
-                    <div class="background col-xl-9 d-flex justify-content-center pt-5 pb-5">
-                        <!-- <img src="https://aluno.unifenas.br/dashboard-novo/images/unifenas/logo_white.svg" alt="AVISOS" width="800"> -->
-                        <img src="../../dashboard-novo/images/unifenas/logo_white.svg" alt="AVISOS" width="800">
+      <div vw class="enabled">
+         <div vw-access-button class="active"></div>
+         <div vw-plugin-wrapper>
+           <div class="vw-plugin-top-wrapper"></div>
+         </div>
+       </div>
+       <!-- <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script> -->
+       <script src="../../../vlibras.gov.br/app/vlibras-plugin.js"></script>
+       <script>
+         new window.VLibras.Widget('https://vlibras.gov.br/app');
+       </script>
+      
+        <div id="layout-wrapper">
+
+            <!-- header -->
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="./home.html" class="logo">
+                                <span class="logo-sm">
+                                    <img src="../../dashboard-novo/images/unifenas/logo-min-branco.png" alt="" height="65">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="../../dashboard-novo/images/unifenas/logo_white.svg" alt="" height="48">
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- collapse button -->
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
                     </div>
-                    <!-- end col -->
 
-                    <div class="col-xl-3">
-                        <div class="auth-full-page-content p-md-5 p-4">
-                            <div class="w-100 d-flex justify-content-center">
-                                <div class="d-flex flex-column">                                 
-                                    <div class="my-auto">
-
-                                        <div class="d-flex justify-content-center mb-4 mb-md-5">
-                                            <a href="https://www.unifenas.br" target="_blank" class="d-block card-logo">
-                                                <!-- <img src="https://aluno.unifenas.br/dashboard-novo/images/unifenas/logo.svg" alt="" height="60" class="card-logo-dark"> -->
-                                                <img src="../../dashboard-novo/images/unifenas/logo.svg" alt="" height="60" class="card-logo-dark">
-                                            </a>
-                                        </div>
-                                        
-                                        <div>
-                                            <h5 class="text-primary">Aluno(a), bem vindo!</h5>
-                                            <p class="text-muted">Agora você tem um novo portal de acesso às suas informações acadêmicas.</p>
-                                        </div>
-                                        <div wire:id="hqqCm6Sn4J9j1PMkB5Hf" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;hqqCm6Sn4J9j1PMkB5Hf&quot;,&quot;name&quot;:&quot;login-form-desktop&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;a101a9b7&quot;,&quot;data&quot;:{&quot;login&quot;:null,&quot;password&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;fc3eb862a3e30c0f3b45d95b012cb75b71274e7d43345730c6624fecde06c7be&quot;}}" class="mt-4">
-  <form wire:submit.prevent="checkLogin" class="needs-validation mb-2" novalidate>
-      <div class="mb-3">
-          <label for="username" class="form-label text-primary">Matrícula</label>
-          <input type="login" id="login" class="form-control text-primary" wire:model="login" autocomplete="off" required>
-      </div>
-
-      <div class="mb-3">
-          <div class="float-end">
-              <!-- <a href="https://unifenas.lyceum.com.br/AOnline3/#/resetsenha" class="text-muted">Esqueceu a senha?</a> -->
-              <a href="../../painel/Manutencao_Programada.html" class="text-muted">Esqueceu a senha?</a>
-          </div>
-          <label class="form-label text-primary">Senha</label>
-          <div class="input-group auth-pass-inputgroup">
-              <input type="password" id="password" class="form-control text-primary" aria-label="Password" aria-describedby="password-addon" wire:model="password" autocomplete="off" required>
-              <button class="btn btn-light " type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
-          </div>
-      </div>
-      
-      <!-- <div class="mt-3 d-grid">
-          <button class="btn btn-login waves-effect waves-light" type="submit">Entrar</button>
-      </div> -->
-
-      <!-- <div class="mt-3 d-grid">
-        <a href="./home.html" class="btn btn-login waves-effect waves-light">Entrar</a>
-      </div> -->
-
-    <div class="mt-3 d-grid">
-    <button class="btn btn-login waves-effect waves-light" onclick="showModal()">Entrar</button>
-    </div>
-
-
-      
-
-      <div class="mt-3 d-grid">
-          <!-- <a href="https://unifenas.lyceum.com.br/AOnline3/index.html#/login" class="btn btn-resp waves-effect waves-light" target="_blank">Login do Pai/Responsável</a> -->
-          <a href="../../painel/Manutencao_Programada.html" class="btn btn-resp waves-effect waves-light">Login do Pai/Responsável</a>
-      </div>
-  </form>
-</div>
-<!-- Livewire Component wire-end:hqqCm6Sn4J9j1PMkB5Hf -->                                        
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="menu-user-desktop d-flex">
+                        <div class="menu-user-img">
+                            <i class='bx bxs-user-circle bx-lg'></i>
+                        </div>
+                        <div class="menu-user-info">
+                            <span><b>ISABELLY FERREIRA QUINTÃO</b></span>
+                            <span><b>RA:</b> 200509251</span>
+                        </div>
+                        <div class="menu-user-dados">
+                                                            <span><b>83 - DIREITO</b></span>
+                                                        <span><b>Série: 1 <b>Período:</b> 2501</span>
+                            <span><b>Status:</b>
+                                                                    <span class="badge bg-success shadow-success">Matriculado</span>
+                                                            </span>
                         </div>
                     </div>
-                    <!-- end col -->
+
+                    <div class="d-flex">
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                                <i class="bx bx-cog"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <!-- end row -->
+            </header>
+
+            <!-- Menu Lateral -->
+            <div class="vertical-menu">
+                <div data-simplebar class="h-100">
+                    <div class="menu-user-mobile pt-5">
+                        <div class="menu-user-mobile-img">
+                            <i class='bx bxs-user-circle bx-lg'></i>
+                        </div>
+                        <div class="menu-user-mobile-info">
+                            <h5><b>ISABELLY FERREIRA QUINTÃO</b></h5>
+                            <span>RA: 200509251</span>
+                                                            <span><b>83 - DIREITO</b></span>
+                                                        <span>Série: 1</span>
+                            <span>Período: 2501</span>
+                            <span>Turma: </span>
+                            <span><b>Status:</b>
+                                                                    <span class="badge bg-success shadow-success mb-3">Matriculado</span>
+                                                            </span>
+                        </div>
+                    </div>
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled mt-3" id="side-menu">
+                            <li>
+                                <a href="./home.html" class="waves-effect">
+                                    <i class="bx bx-collection"></i>
+                                    <span>Links do Sistema</span>
+                                </a>
+                            </li> 
+                            <li>
+                                    <a href="./carteirinha.html" class="waves-effect">
+                                        <i class="bx bx-file"></i>
+                                        <span>Carteirinha</span>
+                                    </a>
+                                 
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class='bx bx-calendar'></i>
+                                    <span>Calendário</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="Trocar_Link">Cronograma Acadêmico</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Horário de Aulas</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Calendário</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class='bx bx-trending-up'></i>
+                                    <span>Avaliação</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="Trocar_Link" target="_blank">Boletim</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Frequência</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Índice de Rendimento</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class='bx bx-book-content' ></i>
+                                    <span>Disciplina</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="Trocar_Link" target="_blank">Disciplinas Matriculadas</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Histórico</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Minha Turma</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Publicações</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Diário de Classe</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class='bx bxs-user-detail'></i>
+                                    <span>Cadastro</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="Trocar_Link">Visão geral</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Dados Cadastrais</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Documentos</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class='bx bx-spreadsheet' ></i>
+                                    <span>Secretaria Virtual</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="Trocar_Link" target="_blank">Solicitação de Serviços</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Matrícula / Assinar contrato</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Contratos assinados</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class='bx bx-dollar-circle'></i>
+                                    <span>Financeiro</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    
+                                    <li><a href="Trocar_Link">Boletos</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Acordo</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Extrato Financeiro</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class='bx bx-trophy'></i>
+                                    <span>Certificados / Extensão</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="Trocar_Link" target="_blank">Certificados de Monitoria</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Certificados de Estágio</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Declarações</a></li>
+                                    <li><a href="Trocar_Link" target="_blank">Validações</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Trocar_Link" class="waves-effect" target="_blank">
+                                    <i class='bx bx-smile' ></i>
+                                    <span>Avaliação Institucional</span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="Trocar_Link" class="waves-effect">
+                                    <i class='bx bx-wifi' ></i>
+                                    <span>WiFi Unifenas</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Trocar_Link" class="waves-effect">
+                                    <i class="bx bx-mail-send"></i>
+                                    <span>Email Institucional</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./login.html" class="waves-effect">
+                                    <i class="bx bx-log-out"></i>
+                                    <span>Sair</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-            <!-- end container-fluid -->
+
+            <!-- conteúdo -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+                           
+   <div class="row">
+            
+      <div class="col-md-6 col-xl-4">      
+         <a href="https://aluno.unifenas.br/auto-login-moodle" target="_blank">
+   <div class="card card-links" >
+      <div class="row no-gutters align-items-center">
+                     <div class="col-3">
+               <img class="card-img img-fluid" src="../../dashboard-novo/images/unifenas/logo_moodle.png" alt="Moodle">
+            </div>
+                  <div class=" col-9 ">
+            <div class="card-body body-custom">
+               <h5 class="card-title ">Ambiente virtual </h5>
+               <p class="card-text ">Acesse aqui o ambiente virtual da UNIFENAS</p>
+               <p class="card-text "><small class=" text-muted ">Clique para acessar</small></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</a>      </div>
+      
+      <div class="col-md-6 col-xl-4">
+         <a href="https://mail.google.com/mail/u/1/" target="_blank">
+   <div class="card card-links" >
+      <div class="row no-gutters align-items-center">
+                     <div class="col-3">
+               <img class="card-img img-fluid" src="../../dashboard-novo/images/unifenas/logo_gmail.png" alt="Gmail">
+            </div>
+                  <div class=" col-9 ">
+            <div class="card-body body-custom">
+               <h5 class="card-title ">E-mail institucional </h5>
+               <p class="card-text ">Acesse seu email institucional da Unifenas</p>
+               <p class="card-text "><small class=" text-muted ">Clique para acessar</small></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</a>      </div>
+      <div class="col-md-6 col-xl-4">      
+         <a href="https://classroom.google.com" target="_blank">
+   <div class="card card-links" >
+      <div class="row no-gutters align-items-center">
+                     <div class="col-3">
+               <img class="card-img img-fluid" src="../../dashboard-novo/images/unifenas/logo_classroom.png" alt="Classroom">
+            </div>
+                  <div class=" col-9 ">
+            <div class="card-body body-custom">
+               <h5 class="card-title ">Classroom </h5>
+               <p class="card-text ">Acesse aqui a sala de aula virtual da Unifenas</p>
+               <p class="card-text "><small class=" text-muted ">Clique para acessar</small></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</a>      </div>
+      <div class="col-md-6 col-xl-4">
+         <a href="http://www.unifenas.br/portaldoaluno.asp" target="_blank">
+   <div class="card card-links" >
+      <div class="row no-gutters align-items-center">
+                     <div class="col-3">
+               <img class="card-img img-fluid" src="../../dashboard-novo/images/unifenas/logo_infoacad.png" alt="Informações acadêmicas">
+            </div>
+                  <div class=" col-9 ">
+            <div class="card-body body-custom">
+               <h5 class="card-title ">Informações acadêmicas </h5>
+               <p class="card-text ">Portal de informações acadêmicas do aluno</p>
+               <p class="card-text "><small class=" text-muted ">Clique para acessar</small></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</a>      </div>
+      <div class="col-md-6 col-xl-4">
+         <a href="https://api.whatsapp.com/send/?phone=553140002386&amp;text&amp;app_absent=0" target="_blank">
+   <div class="card card-links" >
+      <div class="row no-gutters align-items-center">
+                     <div class="col-3">
+               <img class="card-img img-fluid" src="../../dashboard-novo/images/unifenas/wpp.webp" alt="Suporte">
+            </div>
+                  <div class=" col-9 ">
+            <div class="card-body body-custom">
+               <h5 class="card-title ">Central de Atendimento </h5>
+               <p class="card-text ">Whatsapp ou e-mail centraldeatendimento@unifenas.br</p>
+               <p class="card-text "><small class=" text-muted ">Clique para acessar</small></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</a>      </div>
+   </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+        <!-- menu de configurações -->
+        <div class="right-bar">
+            <div data-simplebar class="h-100">
+                <div class="rightbar-title d-flex align-items-center px-3 py-4">
+            
+                    <h5 class="m-0 me-2">Configurações</h5>
+
+                    <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                </div>
+
+                <!-- Settings -->
+                <hr class="mt-0">
+                <h6 class="text-center mb-0">Tema</h6>
+
+                <div class="p-4">
+                    <div class="mb-2">
+                        <img src="../../dashboard-novo/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
+                        <label class="form-check-label" for="light-mode-switch">Tema Claro</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="../../dashboard-novo/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
+                        <label class="form-check-label" for="dark-mode-switch">Tema Escuro</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
 
         <!-- JAVASCRIPT -->
         <script src="../../dashboard-novo/libs/jquery/jquery.min.js"></script>
@@ -149,16 +426,12 @@
         <script src="../../dashboard-novo/libs/simplebar/simplebar.min.js"></script>
         <script src="../../dashboard-novo/libs/node-waves/waves.min.js"></script>
 
-        <!-- owl.carousel js -->
-        <script src="../../dashboard-novo/libs/owl.carousel/owl.carousel.min.js"></script>
-
-
-        <!-- auth-2-carousel init -->
-        <script src="../../dashboard-novo/js/pages/auth-2-carousel.init.js"></script>
-        
-        <!-- App js -->
+        <!-- Datatable init js -->
+        <script src="../../dashboard-novo/js/pages/datatables.init.js"></script>    
         <script src="../../dashboard-novo/js/app.js"></script>
-        <div wire:id="4iHUhQsD6Oufl1PI3cyN" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;4iHUhQsD6Oufl1PI3cyN&quot;,&quot;name&quot;:&quot;livewire-ui-modal&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;openModal&quot;,&quot;destroyComponent&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;0b203baf&quot;,&quot;data&quot;:{&quot;activeComponent&quot;:null,&quot;components&quot;:[]},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;60cf11512ba894410ba0e9353af1dfa0ac2da44371b339a2927a6c8c8abbd6c5&quot;}}">
+        
+                
+        <div wire:id="0luQr8uDj13tdcx5aXmm" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;0luQr8uDj13tdcx5aXmm&quot;,&quot;name&quot;:&quot;livewire-ui-modal&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;painel\/links&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;openModal&quot;,&quot;destroyComponent&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;0b203baf&quot;,&quot;data&quot;:{&quot;activeComponent&quot;:null,&quot;components&quot;:[]},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;f7b7bf273083522610aa74e68da83861a8e86f1d272dab828e445a89b5e52c20&quot;}}">
             <script>(()=>{var t,e={331:()=>{function t(t){return function(t){if(Array.isArray(t))return e(t)}(t)||function(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}(t)||function(t,o){if(!t)return;if("string"==typeof t)return e(t,o);var n=Object.prototype.toString.call(t).slice(8,-1);"Object"===n&&t.constructor&&(n=t.constructor.name);if("Map"===n||"Set"===n)return Array.from(t);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return e(t,o)}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function e(t,e){(null==e||e>t.length)&&(e=t.length);for(var o=0,n=new Array(e);o<e;o++)n[o]=t[o];return n}window.LivewireUIModal=function(){return{show:!1,showActiveComponent:!0,activeComponent:!1,componentHistory:[],modalWidth:null,getActiveComponentModalAttribute:function(t){if(void 0!==this.$wire.get("components")[this.activeComponent])return this.$wire.get("components")[this.activeComponent].modalAttributes[t]},closeModalOnEscape:function(t){if(!1!==this.getActiveComponentModalAttribute("closeOnEscape")){var e=!0===this.getActiveComponentModalAttribute("closeOnEscapeIsForceful");this.closeModal(e)}},closeModalOnClickAway:function(t){!1!==this.getActiveComponentModalAttribute("closeOnClickAway")&&this.closeModal(!0)},closeModal:function(){var t=arguments.length>0&&void 0!==arguments[0]&&arguments[0],e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,o=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(!1!==this.show){if(!0===this.getActiveComponentModalAttribute("dispatchCloseEvent")){var n=this.$wire.get("components")[this.activeComponent].name;Livewire.emit("modalClosed",n)}if(!0===this.getActiveComponentModalAttribute("destroyOnClose")&&Livewire.emit("destroyComponent",this.activeComponent),e>0)for(var i=0;i<e;i++){if(o){var r=this.componentHistory[this.componentHistory.length-1];Livewire.emit("destroyComponent",r)}this.componentHistory.pop()}var s=this.componentHistory.pop();s&&!1===t&&s?this.setActiveModalComponent(s,!0):this.setShowPropertyTo(!1)}},setActiveModalComponent:function(t){var e=this,o=arguments.length>1&&void 0!==arguments[1]&&arguments[1];if(this.setShowPropertyTo(!0),this.activeComponent!==t){!1!==this.activeComponent&&!1===o&&this.componentHistory.push(this.activeComponent);var n=50;!1===this.activeComponent?(this.activeComponent=t,this.showActiveComponent=!0,this.modalWidth=this.getActiveComponentModalAttribute("maxWidthClass")):(this.showActiveComponent=!1,n=400,setTimeout((function(){e.activeComponent=t,e.showActiveComponent=!0,e.modalWidth=e.getActiveComponentModalAttribute("maxWidthClass")}),300)),this.$nextTick((function(){var o,i=null===(o=e.$refs[t])||void 0===o?void 0:o.querySelector("[autofocus]");i&&setTimeout((function(){i.focus()}),n)}))}},focusables:function(){return t(this.$el.querySelectorAll("a, button, input, textarea, select, details, [tabindex]:not([tabindex='-1'])")).filter((function(t){return!t.hasAttribute("disabled")}))},firstFocusable:function(){return this.focusables()[0]},lastFocusable:function(){return this.focusables().slice(-1)[0]},nextFocusable:function(){return this.focusables()[this.nextFocusableIndex()]||this.firstFocusable()},prevFocusable:function(){return this.focusables()[this.prevFocusableIndex()]||this.lastFocusable()},nextFocusableIndex:function(){return(this.focusables().indexOf(document.activeElement)+1)%(this.focusables().length+1)},prevFocusableIndex:function(){return Math.max(0,this.focusables().indexOf(document.activeElement))-1},setShowPropertyTo:function(t){var e=this;this.show=t,t?document.body.classList.add("overflow-y-hidden"):(document.body.classList.remove("overflow-y-hidden"),setTimeout((function(){e.activeComponent=!1,e.$wire.resetState()}),300))},init:function(){var t=this;this.modalWidth=this.getActiveComponentModalAttribute("maxWidthClass"),Livewire.on("closeModal",(function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0],o=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t.closeModal(e,o,n)})),Livewire.on("activeModalComponentChanged",(function(e){t.setActiveModalComponent(e)}))}}}},754:()=>{}},o={};function n(t){var i=o[t];if(void 0!==i)return i.exports;var r=o[t]={exports:{}};return e[t](r,r.exports,n),r.exports}n.m=e,t=[],n.O=(e,o,i,r)=>{if(!o){var s=1/0;for(u=0;u<t.length;u++){for(var[o,i,r]=t[u],a=!0,c=0;c<o.length;c++)(!1&r||s>=r)&&Object.keys(n.O).every((t=>n.O[t](o[c])))?o.splice(c--,1):(a=!1,r<s&&(s=r));if(a){t.splice(u--,1);var l=i();void 0!==l&&(e=l)}}return e}r=r||0;for(var u=t.length;u>0&&t[u-1][2]>r;u--)t[u]=t[u-1];t[u]=[o,i,r]},n.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),(()=>{var t={387:0,109:0};n.O.j=e=>0===t[e];var e=(e,o)=>{var i,r,[s,a,c]=o,l=0;if(s.some((e=>0!==t[e]))){for(i in a)n.o(a,i)&&(n.m[i]=a[i]);if(c)var u=c(n)}for(e&&e(o);l<s.length;l++)r=s[l],n.o(t,r)&&t[r]&&t[r][0](),t[r]=0;return n.O(u)},o=self.webpackChunk=self.webpackChunk||[];o.forEach(e.bind(null,0)),o.push=e.bind(null,o.push.bind(o))})(),n.O(void 0,[109],(()=>n(331)));var i=n.O(void 0,[109],(()=>n(754)));i=n.O(i)})();</script>
         
     <div
@@ -206,57 +479,22 @@
     </div>
 </div>
 
-<!-- Livewire Component wire-end:4iHUhQsD6Oufl1PI3cyN -->        
-<!-- <script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'Cyv2Eq93tmno0L4sjD0PeNthPAQKORm2UyrmbGAa';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script> -->
-<script src="../../vendor/livewire/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'Cyv2Eq93tmno0L4sjD0PeNthPAQKORm2UyrmbGAa';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<!-- Livewire Component wire-end:0luQr8uDj13tdcx5aXmm -->
+ <!-- <script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'Cyv2Eq93tmno0L4sjD0PeNthPAQKORm2UyrmbGAa';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script> -->
+ <script src="../../vendor/livewire/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'Cyv2Eq93tmno0L4sjD0PeNthPAQKORm2UyrmbGAa';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
 
 
+<!-- // Altere Aqui Para Mudar Todos os Links GBR -->
+    <script>
+        document.querySelectorAll("a").forEach(link => {
+            if (link.getAttribute("href") === "Trocar_Link") {
+                link.setAttribute("href", linkPadrao);
+            }
+        });
+    </script>
 
+    </body>  
 
-
-<!-- <div id="alert-modal" class="custom-modal">
-  <div class="custom-modal-content">
-    <h5>Aluno não matriculado</h5>
-    <p>Aluno não está matriculado para o segundo período de 2025.</p>
-    <p>Para realizar sua rematrícula, entre em contato com o <a href="mailto:suporte@unifenas.br" target="_blank">suporte</a>.</p>
-    <button onclick="closeModal()" class="btn btn-login mt-3">Fechar</button>
-  </div>
-</div> -->
-
-
-<div id="alert-modal" class="custom-modal">
-  <div class="custom-modal-content">
-
-    <!-- Imagem acima do aviso -->
-    <img src="../../dashboard-novo/images/unifenas/warning-2.png" alt="Icone" style="max-width: 120px; margin-bottom: 20px;">
-
-    <h5>Aluno não matriculado</h5>
-    <p>O Aluno não está matriculado para o segundo período de 2025.</p>
-    <p>Para realizar sua rematrícula, entre em contato com o <a href="https://www.instagram.com/ghostline_035/" target="_blank">suporte</a>.</p>
-    <button onclick="closeModal()" class="btn btn-login mt-3">Fechar</button>
-  </div>
-</div>
-
-
-
-<script>
-  function showModal() {
-    document.getElementById('alert-modal').style.display = 'block';
-  }
-
-  function closeModal() {
-    document.getElementById('alert-modal').style.display = 'none';
-  }
-</script>
-
-
-
-
-
-
-    </body>
-    
-    
+   
    <script type="text/javascript" src="https://cronchatcronapp.cronapp.io/get-chat?token=c724a5a5c8f5f3e3d5a3b9f9b8a4f3d4"></script>
-
 </html>
